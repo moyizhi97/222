@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost [2]">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="information_schema"/>
+    <schema id="3" parent="1" name="mysql"/>
+    <schema id="4" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="5" parent="4" name="book"/>
+    <table id="6" parent="4" name="persons"/>
+    <column id="7" parent="5" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="8" parent="5" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(128)|12</DataType>
+    </column>
+    <column id="9" parent="5" name="author">
+      <Position>3</Position>
+      <DataType>VARCHAR(64)|12</DataType>
+    </column>
+    <key id="10" parent="5" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="11" parent="6" name="Id_P">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="12" parent="6" name="LastName">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="13" parent="6" name="FirstName">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="14" parent="6" name="Address">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="15" parent="6" name="City">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+  </database-model>
+</dataSource>
